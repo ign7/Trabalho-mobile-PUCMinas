@@ -6,20 +6,61 @@
     android:layout_height="match_parent"
     tools:context=".TelaRelatorioAgendamento">
 
-    <TextView
-        android:id="@+id/textoRelatorio"
+
+    <Button
+        android:id="@+id/agendamento"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="informaçoes agendamento"
+        android:layout_marginBottom="68dp"
+        android:text="Ver"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.56"
+        app:layout_constraintStart_toStartOf="parent" />
+
+
+    <TextView
+        android:id="@+id/TextResult"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="...."
         android:textColor="@color/purple_500"
         android:textSize="16sp"
         android:textStyle="italic"
         app:autoSizeTextType="none"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.446"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.15" />
+        app:layout_constraintVertical_bias="0.28" />
+
+
+    <ImageView
+        android:id="@+id/imageViewLogo"
+        android:layout_width="396dp"
+        android:layout_height="111dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.585"
+        app:srcCompat="@drawable/logo" />
+
+    <TextView
+        android:id="@+id/textoRelatorio"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Seu Agendamento"
+        android:textColor="@color/purple_500"
+        android:textSize="16sp"
+        android:textStyle="italic"
+        app:autoSizeTextType="none"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.112" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
